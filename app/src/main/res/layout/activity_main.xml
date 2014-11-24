@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/phone_test_root"
+    android:background="#F1F1F1"
+    >
+
+    <RelativeLayout
+        android:id="@+id/phone_test_relativelayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/btn0"
+            android:onClick="onBtnClick"
+            android:text="Draw Scroll View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_below="@id/btn0"
+            android:onClick="onBtnClick"
+            android:text="Draw Relative Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tv0"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="onTVClick"
+            android:text="Start Activity Sequential"
+            />
+
+        <Button
+            android:id="@+id/tv1"
+            android:layout_below="@id/tv0"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="onTVClick"
+            android:text="Start Activities"
+            />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_marginTop="700dp"
+            android:layout_below="@id/btn1"
+            android:onClick="onBtnClick"
+            android:text="Scroll View Drawing Cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_below="@id/btn2"
+            android:onClick="onBtnClick"
+            android:text="Relative Layout Drawing Cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
